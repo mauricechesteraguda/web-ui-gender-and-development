@@ -1870,6 +1870,11 @@ Blog
   float: right;
 }
 
+.border-first-button-login {
+  style: block;
+  margin: 0 auto;
+}
+
 .blog-posts {
   margin-left: 30px;
 }
