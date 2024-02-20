@@ -1,16 +1,30 @@
 .navbar {
-    background-color: rgb(117, 64, 119);
-  
+  background-color: rgb(117, 64, 119);
 }
 
-.navbar a{
-    
-    color: rgb(255, 249, 255);
+.navbar a {
+  color: rgb(255, 249, 255);
 }
 
 .main-sidebar {
+  background-color: rgb(82, 44, 83);
+}
 
-    background-color: rgb(82, 44, 83);
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: rgb(117, 64, 119);
+  border-color: rgb(117, 64, 119);
+}
 
+.btn-primary:hover,
+.btn-outline-primary:hover,
+.btn-outline-primary:hover {
+  background-color: rgb(208, 90, 212);
+  border-color: rgb(117, 64, 119);
+}
 
+.btn-outline-primary {
+  border-color: rgb(117, 64, 119);
+  color: rgb(117, 64, 119);
 }
