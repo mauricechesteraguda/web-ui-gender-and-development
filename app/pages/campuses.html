@@ -92,7 +92,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="campuses.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-hotel"></i>
                   <p>Campuses</p>
                 </a>
@@ -139,7 +139,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="responses.html" class="nav-link">
                   <i class="nav-icon fas fa-reply"></i>
                   <p>Responses</p>
                 </a>
@@ -206,12 +206,12 @@
               <div class="container-fluid">
                 <div class="row mb-2">
                   <div class="col-sm-6">
-                    <h1 class="m-0">Responses</h1>
+                    <h1 class="m-0">Campuses</h1>
                   </div>
                   <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                       <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active">Responses</li>
+                      <li class="breadcrumb-item active">Campuses</li>
                     </ol>
                   </div>
                 </div>
@@ -224,238 +224,89 @@
                   <div class="col-12">
                     <div class="card">
                       <div class="card-header">
-                        <h3 class="card-title">User Survey Responses</h3>
+                        <!-- <h3 class="card-title">GAD Plan Budget</h3> -->
+                        <button class="btn btn-primary float-left">
+                          Add Campus
+                        </button>
                       </div>
                       <!-- /.card-header -->
                       <div class="card-body">
                         <div class="table-responsive">
                           <table
-                            id="surveyResponseTable"
+                            id="campusesTable"
                             class="table table-bordered table-hover"
                           >
                             <thead>
                               <tr>
-                                <th>SR Code</th>
-                                <th>First Name</th>
-                                <th>Middle Name</th>
-                                <th>Last Name</th>
-                                <th>Campus</th>
-                                <th>Role</th>
-                                <th>Response Year</th>
+                                <th>#</th>
+                                <th>Campus Name</th>
+                                <th>Location</th>
+                                <th>Status</th>
+
                                 <th>Actions</th>
                               </tr>
                             </thead>
                             <tbody>
                               <!-- Survey response data will be populated dynamically here -->
                               <tr>
-                                <td>SR001</td>
-                                <td>John</td>
-                                <td></td>
-                                <td>Doe</td>
-                                <td>Main Campus</td>
-                                <td>Admin</td>
-                                <td>2023</td>
+                                <td>1</td>
+                                <td>Main Campus I</td>
+                                <td>Rizal Ave., Brgy. 13 Batangas City</td>
                                 <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
-                                  </button>
-                                  <button class="btn btn-danger btn-sm">
-                                    Delete
-                                  </button>
+                                  <span class="badge badge-success"
+                                    >Enabled</span
+                                  >
                                 </td>
-                              </tr>
-                              <tr>
-                                <td>SR002</td>
-                                <td>Jane</td>
-                                <td></td>
-                                <td>Smith</td>
-                                <td>Branch Campus</td>
-                                <td>User</td>
-                                <td>2023</td>
-                                <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
-                                  </button>
-                                  <button class="btn btn-danger btn-sm">
-                                    Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <!-- Add more rows with different data -->
 
-                              <tr>
-                                <td>SR003</td>
-                                <td>Michael</td>
-                                <td></td>
-                                <td>Johnson</td>
-                                <td>Main Campus</td>
-                                <td>User</td>
-                                <td>2022</td>
                                 <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
+                                  <button class="btn btn-primary btn-sm">
+                                    Update
                                   </button>
-                                  <button class="btn btn-danger btn-sm">
-                                    Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>SR004</td>
-                                <td>Susan</td>
-                                <td></td>
-                                <td>Williams</td>
-                                <td>Branch Campus</td>
-                                <td>Admin</td>
-                                <td>2022</td>
-                                <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
-                                  </button>
-                                  <button class="btn btn-danger btn-sm">
-                                    Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>SR005</td>
-                                <td>David</td>
-                                <td></td>
-                                <td>Brown</td>
-                                <td>Main Campus</td>
-                                <td>User</td>
-                                <td>2023</td>
-                                <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
-                                  </button>
-                                  <button class="btn btn-danger btn-sm">
-                                    Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <!-- Add more rows with different data -->
 
-                              <tr>
-                                <td>SR006</td>
-                                <td>Emily</td>
-                                <td></td>
-                                <td>Anderson</td>
-                                <td>Branch Campus</td>
-                                <td>User</td>
-                                <td>2024</td>
-                                <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
-                                  </button>
                                   <button class="btn btn-danger btn-sm">
                                     Delete
                                   </button>
                                 </td>
                               </tr>
                               <tr>
-                                <td>SR007</td>
-                                <td>Christopher</td>
-                                <td></td>
-                                <td>Lee</td>
-                                <td>Main Campus</td>
-                                <td>Admin</td>
-                                <td>2024</td>
+                                <td>2</td>
+                                <td>Main Campus II</td>
+                                <td>Alangilan, Batangas City</td>
                                 <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
-                                  </button>
-                                  <button class="btn btn-danger btn-sm">
-                                    Delete
-                                  </button>
+                                  <span class="badge badge-success"
+                                    >Enabled</span
+                                  >
                                 </td>
-                              </tr>
-                              <!-- Add more rows with different data -->
-                              <tr>
-                                <td>SR008</td>
-                                <td>Amanda</td>
-                                <td></td>
-                                <td>Wilson</td>
-                                <td>Branch Campus</td>
-                                <td>User</td>
-                                <td>2023</td>
                                 <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
+                                  <button class="btn btn-primary btn-sm">
+                                    Update
                                   </button>
+
                                   <button class="btn btn-danger btn-sm">
                                     Delete
                                   </button>
                                 </td>
                               </tr>
                               <tr>
-                                <td>SR009</td>
-                                <td>Matthew</td>
-                                <td></td>
-                                <td>Evans</td>
-                                <td>Main Campus</td>
-                                <td>Admin</td>
-                                <td>2022</td>
+                                <td>3</td>
+                                <td>Rosario Campus</td>
+                                <td>Rosario, Batangas</td>
                                 <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
+                                  <span class="badge badge-danger"
+                                    >Disabled</span
+                                  >
+                                </td>
+                                <td>
+                                  <button class="btn btn-primary btn-sm">
+                                    Update
                                   </button>
+
                                   <button class="btn btn-danger btn-sm">
                                     Delete
                                   </button>
                                 </td>
                               </tr>
-                              <tr>
-                                <td>SR010</td>
-                                <td>Olivia</td>
-                                <td></td>
-                                <td>Thompson</td>
-                                <td>Branch Campus</td>
-                                <td>User</td>
-                                <td>2024</td>
-                                <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
-                                  </button>
-                                  <button class="btn btn-danger btn-sm">
-                                    Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>SR011</td>
-                                <td>Daniel</td>
-                                <td></td>
-                                <td>Roberts</td>
-                                <td>Main Campus</td>
-                                <td>Admin</td>
-                                <td>2023</td>
-                                <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
-                                  </button>
-                                  <button class="btn btn-danger btn-sm">
-                                    Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>SR012</td>
-                                <td>Natalie</td>
-                                <td></td>
-                                <td>Miller</td>
-                                <td>Branch Campus</td>
-                                <td>User</td>
-                                <td>2022</td>
-                                <td>
-                                  <button class="btn btn-info btn-sm">
-                                    Details
-                                  </button>
-                                  <button class="btn btn-danger btn-sm">
-                                    Delete
-                                  </button>
-                                </td>
-                              </tr>
+
                               <!-- Add more rows with different data -->
 
                               <!-- Repeat this row structure for other survey responses -->
@@ -558,7 +409,7 @@
     </script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $("#surveyResponseTable").DataTable();
+        $("#campusesTable").DataTable();
       });
     </script>
   </body>
