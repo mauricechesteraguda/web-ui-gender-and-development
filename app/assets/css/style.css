@@ -53,3 +53,8 @@
   background-color: green !important;
   border-color: green !important;
 }
+
+.active {
+  background-color: rgb(121, 47, 121) !important;
+  color: rgb(236, 235, 235) !important;
+}
