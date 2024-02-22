@@ -28,254 +28,56 @@
       .error-message {
         color: red;
       }
+      .justify-content-center {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 pt-5 mt-5">
           <div class="card registration-container">
             <div class="card-body">
-              <form id="registrationForm" method="post">
-              <h2 class="text-center mb-4">Registration</h2>
-              
-                <div class="form-group">
-                  <label for="srCode">SR Code</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="srCode"
-                    placeholder="Enter SR code"
-                  />
-                  <small
-                    id="srCodeError"
-                    class="form-text error-message"
-                  ></small>
+              <h5 class="card-header text-center">Registration Options</h5>
+              <p class="card-text">Choose your registration type:</p>
+              <div class="row">
+                <div class="col-6">
+                  <a
+                    href="student-register.html"
+                    class="btn btn-primary btn-block"
+                  >
+                    Student
+                  </a>
                 </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="Enter password"
-                  />
-                  <small
-                    id="passwordError"
-                    class="form-text error-message"
-                  ></small>
+                <div class="col-6">
+                  <a href="emp-register.html" class="btn btn-primary btn-block">
+                    Employee
+                  </a>
                 </div>
-                <div class="form-group">
-                  <label for="passwordValidate">Confirm Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="passwordValidate"
-                    placeholder="Confirm password"
-                  />
-                  <small
-                    id="passwordValidateError"
-                    class="form-text error-message"
-                  ></small>
+              </div>
+              <div class="row pt-2">
+                <div class="col-md-12">
+                  <a href="login.html" class="btn btn-secondary btn-block">
+                    Cancel
+                  </a>
                 </div>
-                <div class="form-group">
-                  <label for="firstName">First Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="firstName"
-                    placeholder="Enter first name"
-                  />
-                  <small
-                    id="firstNameError"
-                    class="form-text error-message"
-                  ></small>
-                </div>
-                <div class="form-group">
-                  <label for="middleName">Middle Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="middleName"
-                    placeholder="Enter middle name"
-                  />
-                  <small
-                    id="middleNameError"
-                    class="form-text error-message"
-                  ></small>
-                </div>
-                <div class="form-group">
-                  <label for="lastName">Last Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastName"
-                    placeholder="Enter last name"
-                  />
-                  <small
-                    id="lastNameError"
-                    class="form-text error-message"
-                  ></small>
-                </div>
-                <div class="form-group">
-                  <label for="campus">Campus</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="campus"
-                    placeholder="Enter campus"
-                  />
-                  <small
-                    id="campusError"
-                    class="form-text error-message"
-                  ></small>
-                </div>
-                <div class="form-group">
-                  <label for="sex">Sex</label>
-                  <select class="form-control" id="sex">
-                    <option value="">Select...</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </select>
-                  <small id="sexError" class="form-text error-message"></small>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Enter email"
-                  />
-                  <small
-                    id="emailError"
-                    class="form-text error-message"
-                  ></small>
-                </div>
-                
-              
+              </div>
             </div>
-            <div class="card-footer text-center">
-              <a href="login.html" class="btn btn-secondary mr-2"> Cancel </a>
-              <button
-                type="button"
-                class="btn btn-success"
-                onclick="validateRegistration()"
-              >
-                Register
-              </button>
-            </div>
-          </form>
           </div>
         </div>
       </div>
     </div>
 
-    <script>
-      function validateRegistration() {
-        var srCode = document.getElementById("srCode").value;
-        var password = document.getElementById("password").value;
-        var passwordValidate =
-          document.getElementById("passwordValidate").value;
-        var firstName = document.getElementById("firstName").value;
-        var middleName = document.getElementById("middleName").value;
-        var lastName = document.getElementById("lastName").value;
-        var campus = document.getElementById("campus").value;
-        var sex = document.getElementById("sex").value;
-        var email = document.getElementById("email").value;
-
-        // Check if all fields have input
-        if (!srCode) {
-          document.getElementById("srCodeError").innerText =
-            "SR code is required";
-          return;
-        } else {
-          document.getElementById("srCodeError").innerText = "";
-        }
-
-        if (!password) {
-          document.getElementById("passwordError").innerText =
-            "Password is required";
-          return;
-        } else {
-          document.getElementById("passwordError").innerText = "";
-        }
-
-        if (!passwordValidate) {
-          document.getElementById("passwordValidateError").innerText =
-            "Confirm Password is required";
-          return;
-        } else {
-          document.getElementById("passwordValidateError").innerText = "";
-        }
-
-        if (password !== passwordValidate) {
-          document.getElementById("passwordValidateError").innerText =
-            "Passwords do not match";
-          return;
-        } else {
-          document.getElementById("passwordValidateError").innerText = "";
-        }
-
-        if (!firstName) {
-          document.getElementById("firstNameError").innerText =
-            "First Name is required";
-          return;
-        } else {
-          document.getElementById("firstNameError").innerText = "";
-        }
-
-        if (!middleName) {
-          document.getElementById("middleNameError").innerText =
-            "Middle Name is required";
-          return;
-        } else {
-          document.getElementById("middleNameError").innerText = "";
-        }
-
-        if (!lastName) {
-          document.getElementById("lastNameError").innerText =
-            "Last Name is required";
-          return;
-        } else {
-          document.getElementById("lastNameError").innerText = "";
-        }
-
-        if (!campus) {
-          document.getElementById("campusError").innerText =
-            "Campus is required";
-          return;
-        } else {
-          document.getElementById("campusError").innerText = "";
-        }
-
-        if (!sex) {
-          document.getElementById("sexError").innerText = "Sex is required";
-          return;
-        } else {
-          document.getElementById("sexError").innerText = "";
-        }
-
-        // Email validation regex pattern
-        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        // Check if email is valid
-        if (!email.match(emailPattern)) {
-          document.getElementById("emailError").innerText =
-            "Invalid email address";
-          return;
-        } else {
-          document.getElementById("emailError").innerText = "";
-        }
-
-        // If all validations pass, submit the form
-        document.getElementById("registrationForm").submit();
-      }
-
-      function cancelRegistration() {
-        // Implement cancel logic here
-        alert("Registration canceled");
-      }
-    </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- AdminLTE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
   </body>
 </html>
