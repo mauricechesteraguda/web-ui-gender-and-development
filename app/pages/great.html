@@ -98,12 +98,12 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="../pages/users.html" class="nav-link">
                   <i class="nav-icon fas fa-users"></i>
                   <p>Users</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item menu-open">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-question"></i>
 
@@ -113,7 +113,11 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="tna.html" class="nav-link">
+                    <a
+                      href="tna.html
+                    "
+                      class="nav-link"
+                    >
                       <i class="far fa-circle nav-icon"></i>
                       <p>TNA</p>
                     </a>
@@ -131,7 +135,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="great.html" class="nav-link">
+                    <a href="#" class="nav-link active">
                       <i class="far fa-circle nav-icon"></i>
                       <p>GREAT</p>
                     </a>
@@ -139,7 +143,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="../pages/responses.html" class="nav-link">
+                <a href="responses.html" class="nav-link">
                   <i class="nav-icon fas fa-reply"></i>
                   <p>Responses</p>
                 </a>
@@ -206,12 +210,15 @@
               <div class="container-fluid">
                 <div class="row mb-2">
                   <div class="col-sm-6">
-                    <h1 class="m-0">Users</h1>
+                    <h1 class="m-0">
+                      Gender Responsive Academe Assessment Tool - Survey
+                      Management
+                    </h1>
                   </div>
                   <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                       <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item">Users</li>
+                      <li class="breadcrumb-item">GREAT</li>
                     </ol>
                   </div>
                 </div>
@@ -224,50 +231,56 @@
                   <div class="col-12">
                     <div class="card">
                       <div class="card-header">
-                        <button class="btn btn-primary float-left">
-                          Add User
+                        <button class="btn btn-primary mr-2">
+                          Add New Survey
                         </button>
+
+                        <a
+                          href="questions/great.html"
+                          class="btn btn-outline-primary"
+                        >
+                          Manage Questions
+                        </a>
                       </div>
+
                       <!-- /.card-header -->
+
                       <div class="card-body">
                         <div class="table-responsive">
-                          <table
-                            id="userTable"
-                            class="table table-bordered table-hover"
-                          >
+                          <table id="surveyTable" class="table table-bordered">
                             <thead>
                               <tr>
                                 <th>#</th>
-                                <th>UserId</th>
-                                <th>First Name</th>
-                                <th>Middle Name</th>
-                                <th>Last Name</th>
-
-                                <th>Email</th>
-                                <th>Campus</th>
+                                <th>Year</th>
+                                <th>Link</th>
                                 <th>Status</th>
-                                <th>Role</th>
+
                                 <th>Actions</th>
                               </tr>
                             </thead>
                             <tbody>
-                              <!-- User data will be populated dynamically here -->
                               <tr>
                                 <td>1</td>
-                                <td>SR001</td>
-                                <td>John</td>
-                                <td></td>
-                                <td>Doe</td>
+                                <td>2021</td>
+                                <td>
+                                  https://gad-iss.x10host.com/tna/vcbfgedfger
+                                </td>
+                                <td>
+                                  <span class="badge badge-danger">
+                                    Closed</span
+                                  >
+                                </td>
 
-                                <td>john@example.com</td>
-                                <td>Main Campus II</td>
-                                <td>Active</td>
-                                <td>Admin</td>
                                 <td>
                                   <div class="btn-group" role="group">
                                     <button class="btn btn-primary btn-sm">
-                                      Update
+                                      Edit
                                     </button>
+                                    <a
+                                      href="#"
+                                      class="btn btn-outline-primary btn-sm show-qr-code"
+                                      >Show QR Code</a
+                                    >
                                     <button class="btn btn-danger btn-sm">
                                       Delete
                                     </button>
@@ -276,156 +289,124 @@
                               </tr>
                               <tr>
                                 <td>2</td>
-                                <td>SR002</td>
-                                <td>Jane</td>
-                                <td></td>
-                                <td>Doe</td>
+                                <td>2022</td>
+                                <td>
+                                  https://gad-iss.x10host.com/tna/jhkjhfghfgh
+                                </td>
+                                <td>
+                                  <span class="badge badge-success">
+                                    Enabled</span
+                                  >
+                                </td>
 
-                                <td>jane@example.com</td>
-                                <td>Main Campus I</td>
-                                <td>Active</td>
-                                <td>Coordinator</td>
                                 <td>
                                   <div class="btn-group" role="group">
                                     <button class="btn btn-primary btn-sm">
-                                      Update
+                                      Edit
                                     </button>
+                                    <a
+                                      href="#"
+                                      class="btn btn-outline-primary btn-sm show-qr-code"
+                                      >Show QR Code</a
+                                    >
+
                                     <button class="btn btn-danger btn-sm">
                                       Delete
                                     </button>
                                   </div>
                                 </td>
                               </tr>
-
-                              <!-- Add more rows with different data -->
-                              <tr>
-                                <td>3</td>
-                                <td>SR003</td>
-                                <td>Michael</td>
-                                <td></td>
-                                <td>Smith</td>
-
-                                <td>michael@example.com</td>
-                                <td>Rosario</td>
-                                <td>Active</td>
-                                <td>Coordinator</td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Update
-                                    </button>
-                                    <button class="btn btn-danger btn-sm">
-                                      Delete
-                                    </button>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>4</td>
-                                <td>SR004</td>
-                                <td>Susan</td>
-                                <td></td>
-                                <td>Johnson</td>
-
-                                <td>susan@example.com</td>
-                                <td>Malvar</td>
-                                <td>Active</td>
-                                <td>Coordinator</td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Update
-                                    </button>
-                                    <button class="btn btn-danger btn-sm">
-                                      Delete
-                                    </button>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>5</td>
-                                <td>SR005</td>
-                                <td>Robert</td>
-                                <td></td>
-                                <td>Williams</td>
-
-                                <td>robert@example.com</td>
-                                <td>Main Campus I</td>
-                                <td>Active</td>
-                                <td>GAD Office</td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Update
-                                    </button>
-                                    <button class="btn btn-danger btn-sm">
-                                      Delete
-                                    </button>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>6</td>
-                                <td>SR006</td>
-                                <td>Emily</td>
-                                <td></td>
-                                <td>Anderson</td>
-
-                                <td>emily@example.com</td>
-                                <td>Lipa City</td>
-                                <td>Active</td>
-                                <td>Coordinator</td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Update
-                                    </button>
-                                    <button class="btn btn-danger btn-sm">
-                                      Delete
-                                    </button>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>7</td>
-                                <td>SR007</td>
-                                <td>David</td>
-                                <td></td>
-                                <td>Brown</td>
-
-                                <td>david@example.com</td>
-                                <td>Lemery</td>
-                                <td>Active</td>
-                                <td>Coordinator</td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Update
-                                    </button>
-                                    <button class="btn btn-danger btn-sm">
-                                      Delete
-                                    </button>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <!-- Repeat this row structure for 29 more times with different data -->
                             </tbody>
                           </table>
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="qrModal"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="qrModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div
+                              class="modal-dialog modal-dialog-centered"
+                              role="document"
+                            >
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="qrModalLabel">
+                                    Survey QR Code
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-label="Close"
+                                  >
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="container-fluid">
+                                  <div class="row">
+                                    <div
+                                      class="modal-body col-12"
+                                      id="qrCodeContainer"
+                                    ></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <form>
+                                        <div class="form-group">
+                                          <input
+                                            class="form-control"
+                                            id="urlText"
+                                            value=""
+                                          />
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <!-- /.table-responsive -->
-                      </div>
-                      <!-- /.card-body -->
-                      <div class="card-footer clearfix">
-                        <!-- Pagination and other controls will be handled by DataTables -->
                       </div>
                     </div>
-                    <!-- /.card -->
+                    <!-- /.table-responsive -->
                   </div>
-                  <!-- /.col -->
+                  <!-- /.card-body -->
+                  <div class="card-footer clearfix">
+                    <!-- Pagination and other controls will be handled by DataTables -->
+                  </div>
                 </div>
-                <!-- /.row -->
+                <!-- /.card -->
               </div>
+              <!-- /.col -->
+              <div id="qrcode"></div>
+
+              <!-- DataTables CSS -->
+              <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"
+              />
+
+              <!-- jQuery -->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+              <!-- DataTables JS -->
+              <script
+                type="text/javascript"
+                charset="utf8"
+                src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"
+              ></script>
+
+              <script>
+                $(document).ready(function () {
+                  $("#surveyTable").DataTable();
+                });
+              </script>
+
               <!-- /.container-fluid -->
             </section>
           </div>
@@ -445,7 +426,9 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- AdminLTE JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
@@ -455,6 +438,9 @@
       type="text/javascript"
       src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
     <script>
       // <![CDATA[  <-- For SVG support
@@ -509,7 +495,47 @@
     </script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $("#userTable").DataTable();
+        $("#surveyTable").DataTable();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        window.qrCode = "";
+
+        $("#surveyTable").DataTable();
+
+        // Handle click event for "Show QR Code" button
+        $("#surveyTable tbody").on("click", ".show-qr-code", function () {
+          var url = $(this).closest("tr").find("td:eq(2)").text().trim();
+
+          window.qrCode = new QRCode(
+            document.getElementById("qrCodeContainer"),
+            {
+              text: url,
+              width: 200,
+              height: 200,
+              colorDark: "#000000",
+              colorLight: "#ffffff",
+              correctLevel: QRCode.CorrectLevel.H,
+            }
+          );
+          document.getElementById("urlText").value = url.trim();
+          // "http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=" +
+          // url.trim();
+
+          $("#qrModal").modal("show");
+        });
+      });
+    </script>
+    <script>
+      // Clear QR code when modal is hidden
+      $("#qrModal").on("hidden.bs.modal", function () {
+        document.getElementById("qrCodeContainer").innerHTML = "";
       });
     </script>
   </body>
