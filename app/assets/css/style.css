@@ -62,3 +62,23 @@
 #qrCodeContainer {
   text-align: center;
 }
+
+.purple-progress .progress-bar {
+  background-color: purple;
+}
+
+.survey-background {
+  background-color: rgb(165, 110, 165);
+}
+
+/* Custom CSS to adjust the size of radio buttons */
+.form-check-input[type="radio"] {
+  width: 1em;
+  height: 1em;
+  margin-right: 3em; /* Adjust the margin to increase/decrease the space between radio buttons and labels */
+}
+
+/* Custom CSS to adjust the size of text in the progress bar */
+.progress-bar {
+  font-size: 16px; /* Adjust the font size as needed */
+}
