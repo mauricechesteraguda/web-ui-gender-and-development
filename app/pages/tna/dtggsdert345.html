@@ -39,24 +39,14 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-header">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6">
+                  <div class="container-fluid">
+                    <div class="row justify-content-center">
+                      <div class="col-auto">
                         <div class="">
                           <img
-                            src="../../assets/img/bsu_logo.png"
-                            alt="BSU Logo"
-                            style="width: 30%; height: 30%"
-                            class="float-right"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="float-left">
-                          <img
-                            src="../../assets/img/gad_logo.png"
-                            alt="GAD Logo"
-                            style="width: 65%; height: 30%"
+                            src="../../assets/img/survey_logo.png"
+                            alt="Survey Logo"
+                            style="height: fit-content; width: fit-content"
                           />
                         </div>
                       </div>
@@ -964,7 +954,7 @@
         function updateProgressBar(index) {
           const progress = ((index + 1) / sections.length) * 100;
           progressBar.style.width = progress + "%";
-          progressBar.textContent = `Step ${index + 1}`;
+          progressBar.textContent = `${Math.round(progress)}%`;
         }
 
         updateProgressBar(currentSectionIndex);

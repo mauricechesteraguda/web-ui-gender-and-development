@@ -75,10 +75,17 @@
 .form-check-input[type="radio"] {
   width: 1em;
   height: 1em;
-  margin-right: 3em; /* Adjust the margin to increase/decrease the space between radio buttons and labels */
+  /* margin-right: 3em;  */
+  /* Adjust the margin to increase/decrease the space between radio buttons and labels */
 }
 
 /* Custom CSS to adjust the size of text in the progress bar */
+.progress {
+  height: 30px;
+}
+
 .progress-bar {
   font-size: 16px; /* Adjust the font size as needed */
+
+  border-radius: 20px; /* Optional: Adjust the border radius for thickness */
 }
