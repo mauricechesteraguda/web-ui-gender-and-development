@@ -89,3 +89,19 @@
 
   border-radius: 20px; /* Optional: Adjust the border radius for thickness */
 }
+
+/* .dt-paging-button .page-item .active {
+  background-color: rgb(152, 111, 190);
+  color: red;
+} */
+
+.pagination > li > a,
+.pagination > li > span {
+  color: blueviolet;
+}
+
+.pagination > li.active > a,
+.pagination > li.active > span {
+  background-color: blueviolet !important;
+  border-color: blueviolet !important;
+}
