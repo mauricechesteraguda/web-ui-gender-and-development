@@ -97,11 +97,11 @@
 
 .pagination > li > a,
 .pagination > li > span {
-  color: blueviolet;
+  color: rgb(96, 24, 102);
 }
 
 .pagination > li.active > a,
 .pagination > li.active > span {
-  background-color: blueviolet !important;
-  border-color: blueviolet !important;
+  background-color: rgb(96, 24, 102) !important;
+  border-color: rgb(96, 24, 102) !important;
 }
