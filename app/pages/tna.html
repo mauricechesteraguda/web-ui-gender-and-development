@@ -227,14 +227,14 @@
                     <div class="card">
                       <div class="card-header">
                         <button class="btn btn-primary mr-2">
-                          Add New Survey
+                          <i class="fas fa-plus-circle"></i> Add New Survey
                         </button>
 
                         <a
                           href="questions/tna.html"
                           class="btn btn-outline-primary"
                         >
-                          Manage Questions
+                          <i class="fas fa-tasks"></i> Manage Questions
                         </a>
                       </div>
 
@@ -259,12 +259,6 @@
                                 <td>2023</td>
                                 <td>
                                   https://gad-iss.x10host.com/tna/drfs3i42dk.html
-                                  <a
-                                    href="../pages/tna/drfs3i42dk.html"
-                                    target="_blank"
-                                    class="btn btn-primary btn-sm ml-2"
-                                    >open link</a
-                                  >
                                 </td>
                                 <td>
                                   <span class="badge badge-danger">
@@ -274,18 +268,35 @@
 
                                 <td>
                                   <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Edit
+                                    <a
+                                      href="../pages/tna/drfs3i42dk.html"
+                                      target="_blank"
+                                      class="btn btn-outline-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Open Link"
+                                      ><i class="fas fa-link"></i
+                                    ></a>
+                                    <button
+                                      class="btn btn-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Edit"
+                                    >
+                                      <i class="fas fa-edit"></i>
                                     </button>
                                     <a
                                       href="#"
-                                      class="btn btn-outline-primary btn-sm show-qr-code"
-                                      >Show QR Code</a
+                                      class="btn btn-outline-primary btn-md show-qr-code"
+                                      data-toggle="tooltip"
+                                      title="Show QR Code"
                                     >
+                                      <i class="fas fa-qrcode"></i
+                                    ></a>
                                     <button
-                                      class="btn btn-outline-danger btn-sm"
+                                      class="btn btn-outline-danger btn-md"
+                                      data-toggle="tooltip"
+                                      title="Delete"
                                     >
-                                      Delete
+                                      <i class="fas fa-trash-alt"></i>
                                     </button>
                                   </div>
                                 </td>
@@ -295,13 +306,6 @@
                                 <td>2024</td>
                                 <td>
                                   https://gad-iss.x10host.com/tna/dtggsdert345.html
-
-                                  <a
-                                    href="../pages/tna/dtggsdert345.html"
-                                    target="_blank"
-                                    class="btn btn-primary btn-sm ml-2"
-                                    >open link</a
-                                  >
                                 </td>
                                 <td>
                                   <span class="badge badge-success">
@@ -311,19 +315,37 @@
 
                                 <td>
                                   <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Edit
+                                    <a
+                                      href="../pages/tna/dtggsdert345.html"
+                                      target="_blank"
+                                      class="btn btn-outline-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Open Link"
+                                      ><i class="fas fa-link"></i
+                                    ></a>
+                                    <button
+                                      class="btn btn-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Edit"
+                                    >
+                                      <i class="fas fa-edit"></i>
                                     </button>
+
                                     <a
                                       href="#"
-                                      class="btn btn-outline-primary btn-sm show-qr-code"
-                                      >Show QR Code</a
+                                      class="btn btn-outline-primary btn-md show-qr-code"
+                                      data-toggle="tooltip"
+                                      title="Show QR Code"
                                     >
+                                      <i class="fas fa-qrcode"></i
+                                    ></a>
 
                                     <button
-                                      class="btn btn-outline-danger btn-sm"
+                                      class="btn btn-outline-danger btn-md"
+                                      data-toggle="tooltip"
+                                      title="Delete"
                                     >
-                                      Delete
+                                      <i class="fas fa-trash-alt"></i>
                                     </button>
                                   </div>
                                 </td>
@@ -521,7 +543,7 @@
 
         $("#surveyTable").DataTable();
 
-        // Handle click event for "Show QR Code" button
+        // Handle click event for "<i class="fas fa-qrcode"></i>" button
         $("#surveyTable tbody").on("click", ".show-qr-code", function () {
           var url = $(this).closest("tr").find("td:eq(2)").text().trim();
 

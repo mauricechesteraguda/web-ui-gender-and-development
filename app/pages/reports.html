@@ -226,10 +226,10 @@
                       <div class="card-header">
                         <!-- <h3 class="card-title">GAD Plan Budget</h3> -->
                         <button class="btn btn-primary float-left">
-                          Create Report
+                          <i class="fas fa-plus-circle"></i> Create Report
                         </button>
                         <button class="btn btn-outline-primary float-left ml-1">
-                          Consolidate Report
+                          <i class="fab fa-mixer"></i> Consolidate Report
                         </button>
                       </div>
                       <!-- /.card-header -->
@@ -256,7 +256,7 @@
                               <tr>
                                 <td>1</td>
                                 <td>University</td>
-                                <td>Consolidate</td>
+                                <td>Consolidated</td>
                                 <td>
                                   <span class="badge badge-success"
                                     >Completed</span
@@ -268,23 +268,33 @@
 
                                 <td>
                                   <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Update
+                                    <button
+                                      class="btn btn-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Edit"
+                                    >
+                                      <i class="fas fa-edit"></i>
                                     </button>
                                     <button
-                                      class="btn btn-outline-primary btn-sm"
+                                      class="btn btn-outline-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Print"
                                     >
-                                      Print
+                                      <i class="fas fa-print"></i>
                                     </button>
                                     <button
-                                      class="btn btn-outline-primary btn-sm"
+                                      class="btn btn-outline-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Export to Excel"
                                     >
-                                      Export
+                                      <i class="fas fa-file-export"></i>
                                     </button>
                                     <button
-                                      class="btn btn-outline-danger btn-sm"
+                                      class="btn btn-outline-danger btn-md"
+                                      data-toggle="tooltip"
+                                      title="Delete"
                                     >
-                                      Delete
+                                      <i class="fas fa-trash-alt"></i>
                                     </button>
                                   </div>
                                 </td>
@@ -304,23 +314,33 @@
 
                                 <td>
                                   <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Update
+                                    <button
+                                      class="btn btn-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Edit"
+                                    >
+                                      <i class="fas fa-edit"></i>
                                     </button>
                                     <button
-                                      class="btn btn-outline-primary btn-sm"
+                                      class="btn btn-outline-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Print"
                                     >
-                                      Print
+                                      <i class="fas fa-print"></i>
                                     </button>
                                     <button
-                                      class="btn btn-outline-primary btn-sm"
+                                      class="btn btn-outline-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Export to Excel"
                                     >
-                                      Export
+                                      <i class="fas fa-file-export"></i>
                                     </button>
                                     <button
-                                      class="btn btn-outline-danger btn-sm"
+                                      class="btn btn-outline-danger btn-md"
+                                      data-toggle="tooltip"
+                                      title="Delete"
                                     >
-                                      Delete
+                                      <i class="fas fa-trash-alt"></i>
                                     </button>
                                   </div>
                                 </td>
@@ -338,18 +358,26 @@
 
                                 <td>
                                   <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm">
-                                      Update
+                                    <button
+                                      class="btn btn-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Edit"
+                                    >
+                                      <i class="fas fa-edit"></i>
                                     </button>
                                     <button
-                                      class="btn btn-outline-primary btn-sm"
+                                      class="btn btn-outline-primary btn-md"
+                                      data-toggle="tooltip"
+                                      title="Submit"
                                     >
-                                      Submit
+                                      <i class="fas fa-envelope"></i>
                                     </button>
                                     <button
-                                      class="btn btn-outline-danger btn-sm"
+                                      class="btn btn-outline-danger btn-md"
+                                      data-toggle="tooltip"
+                                      title="Delete"
                                     >
-                                      Delete
+                                      <i class="fas fa-trash-alt"></i>
                                     </button>
                                   </div>
                                 </td>
@@ -394,6 +422,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- AdminLTE JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
@@ -458,6 +487,11 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $("#reportTable").DataTable();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
       });
     </script>
   </body>
