@@ -689,7 +689,10 @@
     </script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $("#surveyResponseTable").DataTable();
+        $("#surveyResponseTable").DataTable({
+          pageLength: 5,
+          lengthMenu: [5, 10, 25, 50, 100],
+        });
       });
     </script>
     <script>

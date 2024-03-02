@@ -690,7 +690,10 @@
     </script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $("#campusesTable").DataTable();
+        $("#campusesTable").DataTable({
+          pageLength: 5,
+          lengthMenu: [5, 10, 25, 50, 100],
+        });
       });
     </script>
     <script>
