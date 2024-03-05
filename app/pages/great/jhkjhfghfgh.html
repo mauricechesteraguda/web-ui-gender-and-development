@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.0.1/css/dataTables.bootstrap4.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- AdminLTE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body class="hold-transition survey-background">
+    <div class="container-fluid">
+      <!-- Your content goes here -->
+
+      <section class="content">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <div class="container-fluid">
+                    <div class="row justify-content-center">
+                      <div class="col-auto">
+                        <div class="">
+                          <img
+                            src="../../assets/img/survey_logo.png"
+                            alt="Survey Logo"
+                            style="height: fit-content; width: fit-content"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row text-center mt-2">
+                      <div class="col-md-12">
+                        <h3 class="text-center">Gender Response Academe Assessment Tool</h3>
+                        <h5 class="text-center">Survey Form</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row mt-3">
+                      <div class="col">
+                        <div class="progress mb-3 purple-progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 0%"
+                            aria-valuenow="0"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            Step 1
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Introduction Section -->
+                    <div class="survey-section">
+                      <h3>GENDER RESPONSIVE ACADEME ASSESSMENT TOOL (GREA2T)
+                        
+                      </h3>
+                      <p class="text-justify">
+                        The Gender REsponsive Academe Assessment Tool (GREA2T) maps HEI functions and gender mainstreaming entry points. It is designed to assess the gender mainstreaming progress of higher education institutions in the functions of curriculum, instruction, research, and administration, with emphasis on the four gender mainstreaming entry points, namely; (1) policy; (2) people; (3) enabling mechanisms; and, (4) programs, projects and activities. 
+                      </p>
+                      <p class="text-justify">
+                        <strong>Instruction</strong>: The following statements indicate how the gender perspective is integrated or mainstreamed in instruction, research, extension, and administration vis-à-vis policy, people, enabling mechanisms, and programs, projects, and activities. Please assess the extent of gender mainstreaming in your academic institution using the following scale:
+
+                        
+                      </p>
+                      <ul>
+                        <li>5 – Very Great Extent</li>
+                        <li>4 – Great Extent</li>
+                        <li>3 – Moderate Extent</li>
+                        <li>2 – Least Extent</li>
+                        <li>1 – No extent at all</li>
+                      </ul>
+                      <br>
+                      
+                      <button class="btn btn-primary next-section">Next</button>
+                    </div>
+
+                    <!-- Personal Details Section -->
+                    <div class="survey-section" style="display: none;">
+                      <h3>Personal Details</h3>
+                      <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="first-name"
+                          placeholder="Enter your first name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="middle-name">Middle Name:</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="middle-name"
+                          placeholder="Enter your middle name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="last-name"
+                          placeholder="Enter your last name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="sex">Sex:</label>
+                        <select class="form-control" id="sex">
+                          <option value=""></option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input
+                          type="number"
+                          min="0"
+                          class="form-control"
+                          id="age"
+                          placeholder="Enter your age"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="campus">Campus:</label>
+                        <select class="form-control" id="campus">
+                          <option disabled value=""></option>
+                          <option value="Alangilan">
+                            Main Campus II - Alangilan
+                          </option>
+                          <option value="ARASOF Nasugbu">ARASOF Nasugbu</option>
+                          <option value="Balayan">Balayan</option>
+                          <option value="JPLPC Malvar">JPLPC Malvar</option>
+                          <option value="Lemery">Lemery</option>
+                          <option value="Lipa">Lipa</option>
+                          <option value="Lobo">Lobo</option>
+                          <option value="Mabini">Mabini</option>
+                          <option value="Main Campus I">
+                            Main Campus I - Rizal Ave
+                          </option>
+                          <option value="Rosario">Rosario</option>
+                          <option value="San Juan">San Juan</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="rank">Rank (for faculty/employee):</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="rank"
+                          placeholder="Enter your rank"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="length-of-service"
+                          >Length of Service (for faculty/employee):</label
+                        >
+                        <input
+                          type="number"
+                          min="0"
+                          step="0.1"
+                          class="form-control"
+                          id="length-of-service"
+                          placeholder="Enter your length of service"
+                        />
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="contact-number">Contact Number:</label>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="contact-number"
+                          placeholder="Enter your contact number"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Enter your email"
+                        />
+                      </div>
+                      <br />
+                      <button class="btn btn-primary prev-section">
+                        Previous
+                      </button>
+                      <button class="btn btn-primary next-section">Next</button>
+                    </div>
+
+                    <!-- Survey Questions Sections -->
+                    <div class="survey-section" style="display: none">
+                      <h6>
+                        Question # 1
+                      </h6>
+                      <div class="form-group">
+                        <fieldset>
+                          <div class="card">
+                            <div class="card-header">
+                              <div class="container-fluid">
+                                Section : <strong><span class="section_">CURRICULUM</span></strong><br> Entry Point: <strong><span class="entry_point_">POLICY</span></strong>
+                                <div class="legend-text">
+                                  <p>
+                                    Please assess the extent of gender mainstreaming in your academic institution using the following scale:<br />
+                                    1 – No extent at all<br />
+                                    2 – Least Extent<br />
+                                    3 – Moderate Extent<br />
+                                    4 – Great Extent<br />
+                                    5 – Very Great Extent
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <legend>
+                                <h3 class="question_">The institution disseminates policy to mainstream gender equality and women empowerment in academic programs and course offerings is disseminated</h3>
+                              </legend>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-1"
+                                  value="1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-2"
+                                  value="2"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-3"
+                                  value="3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-4"
+                                  value="4"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-5"
+                                  value="5"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-5"
+                                  >5</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <br />
+                      
+                      <button class="btn btn-primary prev-section">
+                        Previous
+                      </button>
+                      <button class="btn btn-primary next-section">Next</button>
+                    </div>
+
+                    <div class="survey-section" style="display: none">
+                      <h6>
+                        Question # 1
+                      </h6>
+                      <div class="form-group">
+                        <fieldset>
+                          <div class="card">
+                            <div class="card-header">
+                              <div class="container-fluid">
+                                Section : <strong><span class="section_">CURRICULUM</span></strong><br> Entry Point: <strong><span class="entry_point_">POLICY</span></strong>
+                                <div class="legend-text">
+                                  <p>
+                                    Please assess the extent of gender mainstreaming in your academic institution using the following scale:<br />
+                                    1 – No extent at all<br />
+                                    2 – Least Extent<br />
+                                    3 – Moderate Extent<br />
+                                    4 – Great Extent<br />
+                                    5 – Very Great Extent
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <legend>
+                                <h3 class="question_">The institution observes a policy to use gender fair language in course syllabus, textbooks and other learning materials</h3>
+                              </legend>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-1"
+                                  value="1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-2"
+                                  value="2"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-3"
+                                  value="3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-4"
+                                  value="4"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-5"
+                                  value="5"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-5"
+                                  >5</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <br />
+                      
+
+                      <button class="btn btn-primary prev-section">
+                        Previous
+                      </button>
+                      <button class="btn btn-primary next-section">Next</button>
+                    </div>
+
+                    <div class="survey-section" style="display: none">
+                      <h6>
+                        Question # 1
+                      </h6>
+                      <div class="form-group">
+                        <fieldset>
+                          <div class="card">
+                            <div class="card-header">
+                              <div class="container-fluid">
+                                Section : <strong><span class="section_">CURRICULUM</span></strong><br> Entry Point: <strong><span class="entry_point_">PEOPLE</span></strong>
+                                <div class="legend-text">
+                                  <p>
+                                    Please assess the extent of gender mainstreaming in your academic institution using the following scale:<br />
+                                    1 – No extent at all<br />
+                                    2 – Least Extent<br />
+                                    3 – Moderate Extent<br />
+                                    4 – Great Extent<br />
+                                    5 – Very Great Extent
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <legend>
+                                <h3 class="question_">The institution’s academic officials attend appropriate and relevant trainings on GAD (gender sensitivity training, gender analysis and GA tools, GAD planning and budgeting)</h3>
+                              </legend>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-1"
+                                  value="1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-2"
+                                  value="2"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-3"
+                                  value="3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-4"
+                                  value="4"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-5"
+                                  value="5"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-5"
+                                  >5</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <br />
+                      
+                      <button class="btn btn-primary prev-section">
+                        Previous
+                      </button>
+                      <button class="btn btn-primary next-section">Next</button>
+                    </div>
+
+                    <div class="survey-section" style="display: none">
+                      <h6>
+                        Question # 1
+                      </h6>
+                      <div class="form-group">
+                        <fieldset>
+                          <div class="card">
+                            <div class="card-header">
+                              <div class="container-fluid">
+                                Section : <strong><span class="section_">CURRICULUM</span></strong><br> Entry Point: <strong><span class="entry_point_">PEOPLE</span></strong>
+                                <div class="legend-text">
+                                  <p>
+                                    Please assess the extent of gender mainstreaming in your academic institution using the following scale:<br />
+                                    1 – No extent at all<br />
+                                    2 – Least Extent<br />
+                                    3 – Moderate Extent<br />
+                                    4 – Great Extent<br />
+                                    5 – Very Great Extent
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <legend>
+                                <h3 class="question_">The institution’s faculty members are oriented on GAD</h3>
+                              </legend>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-1"
+                                  value="1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-2"
+                                  value="2"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-3"
+                                  value="3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-4"
+                                  value="4"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-5"
+                                  value="5"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-5"
+                                  >5</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <br />
+                      
+                      <button class="btn btn-primary prev-section">
+                        Previous
+                      </button>
+                      <button class="btn btn-primary next-section">Next</button>
+                    </div>
+
+                    <div class="survey-section" style="display: none">
+                      <h6>
+                        Question # 1
+                      </h6>
+                      <div class="form-group">
+                        <fieldset>
+                          <div class="card">
+                            <div class="card-header">
+                              <div class="container-fluid">
+                                Section : <strong><span class="section_">CURRICULUM</span></strong><br> Entry Point: <strong><span class="entry_point_">ENABLING MECHANISMS</span></strong>
+                                <div class="legend-text">
+                                  <p>
+                                    Please assess the extent of gender mainstreaming in your academic institution using the following scale:<br />
+                                    1 – No extent at all<br />
+                                    2 – Least Extent<br />
+                                    3 – Moderate Extent<br />
+                                    4 – Great Extent<br />
+                                    5 – Very Great Extent
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <legend>
+                                <h3 class="question_">The institution uses a manual a guide in the development of gender-responsive curricular offering</h3>
+                              </legend>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-1"
+                                  value="1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-2"
+                                  value="2"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-3"
+                                  value="3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-4"
+                                  value="4"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-5"
+                                  value="5"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-5"
+                                  >5</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <br />
+                      
+                      <button class="btn btn-primary prev-section">
+                        Previous
+                      </button>
+                      <button class="btn btn-primary next-section">Next</button>
+                    </div>
+
+                    <div class="survey-section" style="display: none">
+                      <h6>
+                        Question # 1
+                      </h6>
+                      <div class="form-group">
+                        <fieldset>
+                          <div class="card">
+                            <div class="card-header">
+                              <div class="container-fluid">
+                                Section : <strong><span class="section_">CURRICULUM</span></strong><br> Entry Point: <strong><span class="entry_point_">ENABLING MECHANISMS</span></strong>
+                                <div class="legend-text">
+                                  <p>
+                                    Please assess the extent of gender mainstreaming in your academic institution using the following scale:<br />
+                                    1 – No extent at all<br />
+                                    2 – Least Extent<br />
+                                    3 – Moderate Extent<br />
+                                    4 – Great Extent<br />
+                                    5 – Very Great Extent
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <legend>
+                                <h3 class="question_">The institution integrates the gender perspective in the syllabi of general education, core and professional courses.</h3>
+                              </legend>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-1"
+                                  value="1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-1"
+                                  >1</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-2"
+                                  value="2"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-2"
+                                  >2</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-3"
+                                  value="3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-3"
+                                  >3</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-4"
+                                  value="4"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-4"
+                                  >4</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="question1"
+                                  id="question1-5"
+                                  value="5"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="question1-5"
+                                  >5</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <br />
+                      
+                      <button class="btn btn-primary prev-section">
+                        Previous
+                      </button>
+                      <button class="btn btn-primary next-section">Next</button>
+                    </div>
+
+                    <!-- Summary Section -->
+                    <div
+                      id="summary"
+                      class="survey-section"
+                      style="display: none"
+                    >
+                      <div class="card">
+                        <div class="card-header">
+                          <div class="container-fluid">
+                            <h3>Submit Details for:</h3>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <p>
+                            Name: <span id="summary-name">Juan Dela Cruz</span>
+                          </p>
+                          <p>
+                            Email:
+                            <span id="summary-email"
+                              >juandelacruz@gmail.com</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+
+                      <button class="btn btn-primary prev-section">
+                        Previous
+                      </button>
+                      <button
+                        class="btn btn-primary next-section"
+                        id="submit-btn"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                    <div class="survey-section" style="display: none">
+                      <div class="card">
+                        <div class="card-body container text-center">
+                          <div class="container-fluid">
+                            <h6>Thank you for completing the survey!</h6>
+                            <div class="form-group">
+                              <p>
+                                Your responses have been successfully submitted.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="btn btn-primary" onclick="window.close()">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer clearfix">
+              <!-- Pagination and other controls will be handled by DataTables -->
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+
+        <script>
+          $(document).ready(function () {
+            $("#surveyTable").DataTable({
+              pageLength: 5,
+              lengthMenu: [5, 10, 25, 50, 100],
+            });
+          });
+        </script>
+
+        <!-- /.container-fluid -->
+      </section>
+    </div>
+    <!-- /.container-fluid -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- AdminLTE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/2.0.1/js/dataTables.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/2.0.1/js/dataTables.bootstrap4.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#surveyTable").DataTable({
+          pageLength: 5,
+          lengthMenu: [5, 10, 25, 50, 100],
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".survey-section");
+        const progressBar = document.querySelector(".progress-bar");
+        let currentSectionIndex = 0;
+
+        function showSection(index) {
+          sections.forEach((section) => {
+            section.style.display = "none";
+          });
+          sections[index].style.display = "block";
+        }
+
+        function updateProgressBar(index) {
+          const progress = ((index + 1) / sections.length) * 100;
+          progressBar.style.width = progress + "%";
+          progressBar.textContent = `Step ${index + 1}`;
+        }
+
+        updateProgressBar(currentSectionIndex);
+        showSection(currentSectionIndex);
+
+        document.querySelectorAll(".next-section").forEach((button) => {
+          button.addEventListener("click", function () {
+            currentSectionIndex++;
+            updateProgressBar(currentSectionIndex);
+            showSection(currentSectionIndex);
+          });
+        });
+
+        document.querySelectorAll(".prev-section").forEach((button) => {
+          button.addEventListener("click", function () {
+            currentSectionIndex--;
+            updateProgressBar(currentSectionIndex);
+            showSection(currentSectionIndex);
+          });
+        });
+
+        // document
+        //   .getElementById("submit-btn")
+        //   .addEventListener("click", function () {
+        //     // Here you can add code to handle form submission
+        //     alert("Form submitted!");
+        //   });
+      });
+    </script>
+  </body>
+</html>
