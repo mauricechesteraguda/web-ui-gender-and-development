@@ -12,6 +12,7 @@
 
 .btn-primary,
 .btn-primary:active,
+.btn-primary:enabled,
 .btn-primary:visited {
   background-color: rgb(117, 64, 119);
   border-color: rgb(117, 64, 119);
@@ -24,7 +25,9 @@
   border-color: rgb(117, 64, 119);
 }
 
-.btn-outline-primary {
+.btn-outline-primary,
+.btn-outline-primary:enabled,
+.btn-outline-primary:visited {
   border-color: rgb(117, 64, 119);
   color: rgb(117, 64, 119);
 }
