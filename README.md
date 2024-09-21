@@ -1,10 +1,10 @@
-# Gender and Development AI-Assisted Survey and Reporting System (Web UI Prototype)
+# Gender and Development AI-Assisted Survey and Reporting System (Web UI Prototype - Completed Project using Django 5.2)
 
 ## Overview
 
 This repository contains a **web UI prototype** of a system designed to revolutionize survey collection and reporting on gender and development issues. The prototype simulates the user interface and workflow of the final application, which leverages AI-assisted inputs to streamline the creation of budget plans and accomplishment reports, ensuring data accuracy and insightful analysis.
 
-Although this is only a front-end prototype, it demonstrates how the final system will enhance decision-making, improve resource allocation, and support comprehensive reporting, thereby boosting the efficiency and effectiveness of gender and development initiatives.
+Although this is only a front-end prototype, it demonstrates how the final system enhance decision-making, improve resource allocation, and support comprehensive reporting, thereby boosting the efficiency and effectiveness of gender and development initiatives.
 
 ## Key Features (Prototype)
 
@@ -34,12 +34,12 @@ To view and simulate this prototype locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+    git clone https://github.com/mauricechesteraguda/web-ui-gender-and-development.git
     ```
 
 2. Navigate into the project directory:
     ```bash
-    cd YOUR-REPOSITORY
+    cd web-ui-gender-and-development
     ```
 
 3. Open the `index.html` file in your browser to simulate the app:
@@ -54,7 +54,7 @@ To view and simulate this prototype locally, follow these steps:
 
 ## Future Development
 
-The full system will include:
+The full system includes:
 
 - **AI-Driven Insights**: Integration with machine learning models for real-time data analysis.
 - **Database Connectivity**: For persistent data storage and management.
@@ -70,5 +70,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any questions or inquiries, please reach out to [your-email@example.com](mailto:your-email@example.com).
+For any questions or inquiries, please reach out to https://www.linkedin.com/in/maurice-chester-aguda-09b93981/.
 
