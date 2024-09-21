@@ -57,7 +57,7 @@ To view and simulate this prototype locally, follow these steps:
 The full system includes:
 
 - **AI-Driven Insights**: Integration with machine learning models for real-time data analysis.
-- **Database Connectivity**: For persistent data storage and management.
+- **Data Analytics**: For data analysis.
 - **Advanced Reporting and Visualization**: To generate in-depth reports with graphical insights.
 
 ## Contributing
