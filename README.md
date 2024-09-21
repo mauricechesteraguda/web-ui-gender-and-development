@@ -20,7 +20,7 @@ Although this is only a front-end prototype, it demonstrates how the final syste
 
 ## Purpose
 
-This web UI prototype serves as a simulation of the final system's design and workflow. It is **not yet connected** to the back-end AI algorithms and database, but it provides a visual and interactive representation of how the real system will function.
+This web UI prototype serves as a simulation of the final system's design and workflow. It is **not yet connected** to the back-end AI algorithms and database, but it provides a visual and interactive representation of how the real system functions.
 
 ## Technologies Used
 
